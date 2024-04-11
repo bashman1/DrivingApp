@@ -9,9 +9,9 @@ export const styles = StyleSheet.create(
     {
         healthPalBlue: {
             // color: '#263776',
-            color: '#76BA1D',
+            color: '#800000',
         },
-        healthPalBlueBackground: {   
+        healthPalBlueBackground: {
             // backgroundColor: '#263776',  
             backgroundColor: '#ffffff',
         },
@@ -32,10 +32,10 @@ export const styles = StyleSheet.create(
             justifyContent: 'center',
             alignItems: 'center',
         },
- 
+
         marginBottom: {
             marginBottom: 20,
-            
+
         },
         screenLogo: {
             height: 100,
@@ -50,10 +50,10 @@ export const styles = StyleSheet.create(
         padding: {
             padding: 10
         },
-        marginBottom10:{
+        marginBottom10: {
             marginBottom: 10,
         },
-        marginTop10:{
+        marginTop10: {
             marginTop: 10,
         },
         touchableButton: {
@@ -116,7 +116,7 @@ export const styles = StyleSheet.create(
             shadowOpacity: 0.26,
             elevation: 8,
             backgroundColor: 'white',
-            
+
             // paddingTop: 20,
             // paddingBottom: 20,
             // paddingLeft: 10,
@@ -129,43 +129,43 @@ export const styles = StyleSheet.create(
             // marginRight: 15,
         },
 
-        row:{
+        row: {
             flexDirection: 'row',
         },
 
-          item: {
+        item: {
             width: '48%', // is 50% of container width
-          },
+        },
 
-          categoryItem:{
-              width: '32%'
-          },
-          introText:{
-              fontWeight: 'bold',
-              fontSize: 20
-          },
-        heading:{
+        categoryItem: {
+            width: '32%'
+        },
+        introText: {
+            fontWeight: 'bold',
+            fontSize: 20
+        },
+        heading: {
             fontWeight: 'bold',
             fontSize: 25,
             paddingBottom: 5
 
         },
-          page: {
+        page: {
             flex: 1,
             justifyContent: "center",
             alignItems: "center",
             backgroundColor: "#ffffff"
-          },
-          container: {
+        },
+        container: {
             height: '100%',
             width: '100%',
             backgroundColor: "#fff"
-          },
-          map: {
+        },
+        map: {
             flex: 1
-          },
-          navIconStyle:{
-            paddingRight:10
+        },
+        navIconStyle: {
+            paddingRight: 10
         },
         drawerContent: {
             flex: 1,
@@ -212,53 +212,53 @@ export const styles = StyleSheet.create(
             overflow: "hidden",
             borderWidth: 1,
         },
-        passwordWidth:{
+        passwordWidth: {
             width: '100%'
         },
-        showPasswordIcon:{
-            width:'15%',
+        showPasswordIcon: {
+            width: '15%',
             position: 'absolute',
             right: 0
         },
-        loginMarginTop:{
-            marginTop :'30%'
+        loginMarginTop: {
+            marginTop: '30%'
         },
-        homeScreenIcon:{
-            height:140,
-            width:140,
+        homeScreenIcon: {
+            height: 140,
+            width: 140,
         },
-        doctorsThumbnail:{
+        doctorsThumbnail: {
             width: 60,
             height: 60
         },
-        borderBottom:{
+        borderBottom: {
             borderBottomWidth: 1,
             width: '100%',
             borderBottomColor: '#e6e6e6',
             marginBottom: 2,
         },
-        marginRight:{
+        marginRight: {
             marginRight: 10
         },
-        fontWeightBold:{
-             fontWeight: 'bold',
+        fontWeightBold: {
+            fontWeight: 'bold',
         },
-        greyColorFaint:{
+        greyColorFaint: {
             color: '#8c8c8c'
         },
-        pageTitle:{
+        pageTitle: {
             fontSize: 25,
             fontWeight: 'bold',
             color: '#263776'
 
         },
-        searchResultTouchable:{
-            padding:10,
+        searchResultTouchable: {
+            padding: 10,
             borderBottomColor: '#e6e6e6',
             borderBottomWidth: 1
 
         },
-        searchResults:{
+        searchResults: {
             shadowColor: 'black',
             shadowOffset: { width: 0, height: 2 },
             shadowOpacity: 0.26,
@@ -268,71 +268,71 @@ export const styles = StyleSheet.create(
             paddingRight: 20,
             borderRadius: 5
         },
-        searchResultItem:{
+        searchResultItem: {
             fontSize: 20
         },
-        searchPageMarginTop:{
-            marginTop:10
+        searchPageMarginTop: {
+            marginTop: 10
 
         },
-        appBar:{
+        appBar: {
             height: 100,
             backgroundColor: '#263776',
             paddingTop: 25,
             paddingLeft: 10,
-            paddingRight :10,
+            paddingRight: 10,
         },
-        imageBackGround:{
+        imageBackGround: {
             width: '100%',
             height: '100%',
         },
-        backgroundImageHeight:{
-            height:100,
+        backgroundImageHeight: {
+            height: 100,
         },
-        pharmacyCatImg:{
+        pharmacyCatImg: {
             height: 40,
             width: 40,
             overflow: 'hidden'
         },
-        padding10:{
-            padding:10
+        padding10: {
+            padding: 10
         },
-        floatRight:{
+        floatRight: {
             alignItems: 'flex-end',
             marginTop: -20,
         },
-        alignRight:{
+        alignRight: {
             textAlign: 'right'
         },
-        minFullHeight:{
+        minFullHeight: {
             minHeight: '100%',
-        },        
-        fontSize5:{
+        },
+        fontSize5: {
             fontSize: 5
         },
-        fontSize10:{
+        fontSize10: {
             fontSize: 10
         },
-        fontSize20:{
+        fontSize20: {
             fontSize: 20
         },
-        fontSize30:{
+        fontSize30: {
             fontSize: 30
         },
-        fontSize40:{
+        fontSize40: {
             fontSize: 40
         },
-        fontSize50:{
+        fontSize50: {
             fontSize: 50
         },
-        fontSize60:{
+        fontSize60: {
             fontSize: 60
         },
-        medicineDetailsImage:{
+        medicineDetailsImage: {
             width: '98%',
             height: 200
         },
-        floatingButton:{
+        floatingButton: {
             borderWidth: 1,
             borderColor: 'rgba(0,0,0,0.2)',
             alignItems: 'center',
@@ -346,46 +346,46 @@ export const styles = StyleSheet.create(
             borderRadius: 100,
         },
 
-        backgroundWhite:{
-            backgroundColor:'#ffffff'
-        },
-        greenTheme:{
-            backgroundColor:"#5F9B42"
-        },
-        darkTheme:{
-            backgroundColor: '#333340'
-        },
-        lightTheme:{
+        backgroundWhite: {
             backgroundColor: '#ffffff'
         },
-        selectStyle:{
+        greenTheme: {
+            backgroundColor: "#5F9B42"
+        },
+        darkTheme: {
+            backgroundColor: '#333340'
+        },
+        lightTheme: {
+            backgroundColor: '#ffffff'
+        },
+        selectStyle: {
             borderRadius: 5
         },
-        selectTextColor:{
-            color:"#000"
+        selectTextColor: {
+            color: "#000"
         },
-        flex09:{
-            flex:0.9
-        },      
-        flex01:{
-            flex:0.1,
-            paddingLeft:2
+        flex09: {
+            flex: 0.9
         },
-        flex06:{
-            flex:0.6
+        flex01: {
+            flex: 0.1,
+            paddingLeft: 2
         },
-        flex04:{
-            flex:0.6,
-            paddingLeft:2
+        flex06: {
+            flex: 0.6
         },
-        flex03:{
-            flex:0.3
+        flex04: {
+            flex: 0.6,
+            paddingLeft: 2
         },
-        flex07:{
-            flex:0.7
+        flex03: {
+            flex: 0.3
         },
-        flex05:{
-            flex:0.5
+        flex07: {
+            flex: 0.7
+        },
+        flex05: {
+            flex: 0.5
         },
 
         // cart css 
@@ -448,11 +448,14 @@ export const styles = StyleSheet.create(
             flex: 1,
             padding: 24,
             backgroundColor: 'grey',
-          },
-          contentContainer: {
+        },
+        contentContainer: {
             flex: 1,
             alignItems: 'center',
-          },
+        },
+        fontWeightBold:{
+            fontWeight: 'bold',
+        },
 
     }
 )

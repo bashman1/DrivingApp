@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import SignIn from '../components/auth/SignIn'
 import Home from '../components/main/Home';
+import ItemList from '../components/main/ItemList'
 import Intro from '../components/intro/Intro';
 import { styles } from '../styles/Styles';
 import IonIcon from 'react-native-vector-icons/Ionicons';
@@ -21,7 +22,7 @@ export const navLayout = (header, navigation) => {
             headerShown: true,
             title: header,
             headerStyle: {
-                backgroundColor: '#5F9B42',
+                backgroundColor: '#800000',
                 elevation: 0,
                 shadowOpacity: 0
             },
@@ -31,7 +32,7 @@ export const navLayout = (header, navigation) => {
                 width: '100%',
                 textAlign: 'center',
             },
-            headerRight: () => badgedIcon(navigation)
+            // headerRight: () => badgedIcon(navigation)
         }
     )
 }
@@ -40,7 +41,7 @@ export const badgedIcon = (props) => {
 
     return (
         <TouchableOpacity style={[styles.rows, styles.navIconStyle]}  onPress={() => { props.navigate('Cart')}}>
-            <IonIcon size={25} color="#fff" name="cart" />
+            {/* <IonIcon size={25} color="#fff" name="cart" /> */}
             {/* <Badge styles={styles.badge}>0</Badge> */}
         </TouchableOpacity>
     )
@@ -65,7 +66,8 @@ export const AuthScreen = () => {
                 <Stack.Screen name="Intro" component={Intro} />
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Drawer.Screen name="Home" component={Home} options={({ navigation })=>navLayout("Home", navigation)} />
-                {/* <Stack.Screen name="SignUp" component={SignUp} /> */}
+                <Drawer.Screen name="ItemList" component={ItemList} options={({ navigation })=>navLayout("ItemList", navigation)} />
+                {/* <Stack.Screen name="ItemList" component={ItemList} /> */}
                 {/* <Stack.Screen name="ConsultMedicalWorker" component={Consultation}/> */}
             </Stack.Navigator>
         </NavigationContainer>

@@ -23,7 +23,7 @@ export const postToServer = (url, data, request) => {
 }
 
 export const postToServerWithToken = (url, data, request, token) => {
-    // createAlert("Url", baseUrl+url)
+
     try {
         let parameter = {};
         parameter['headers'] = { 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization':'Bearer '+ token };
