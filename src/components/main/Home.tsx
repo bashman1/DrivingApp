@@ -16,6 +16,7 @@ const Home = (props: any) => {
         { id: 4, type: 'community', icon: "traffic-light", name: "Traffic Signals" },
         { id: 5, type: 'community', icon: "gavel", name: "Exercises" },
         { id: 6, type: 'ionic', icon: "settings-sharp", name: "Settings" },
+        
     ])
 
     useEffect(() => {
@@ -30,13 +31,13 @@ const Home = (props: any) => {
                             items.map((element) => {
                                 return (
                                     <View style={[styles.item, styles.padding]}>
-                                        <TouchableOpacity style={styles.card} onPress={() => { props.navigation.navigate("ItemList", { id: element.id }) }}>
+                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => { props.navigation.navigate("ItemList", { id: element.id }) }}>
                                             {element.type == 'ionic' ? (
-                                                <IonIcon name={element.icon} color={appColor()} size={100} />
+                                                <IonIcon name={element.icon} color={appColor()} size={60} />
                                             ) : (
-                                                <Icon name={element.icon} size={100} color={appColor()} />
+                                                <Icon name={element.icon} size={60} color={appColor()} />
                                             )}
-                                            <Text style={[styles.healthPalBlue, styles.fontWeightBold, styles.fontSize20]}>{element.name}</Text>
+                                            <Text style={[styles.healthPalBlue, styles.fontWeightBold, styles.fontSize15]}>{element.name}</Text>
                                         </TouchableOpacity>
                                     </View>
                                 )

@@ -224,8 +224,8 @@ export const styles = StyleSheet.create(
             marginTop: '30%'
         },
         homeScreenIcon: {
-            height: 140,
-            width: 140,
+            height: 120,
+            width: 120,
         },
         doctorsThumbnail: {
             width: 60,
@@ -312,6 +312,9 @@ export const styles = StyleSheet.create(
         },
         fontSize10: {
             fontSize: 10
+        },
+        fontSize15: {
+            fontSize: 15
         },
         fontSize20: {
             fontSize: 20
@@ -456,6 +459,23 @@ export const styles = StyleSheet.create(
         fontWeightBold:{
             fontWeight: 'bold',
         },
+        minWidth:{
+            minWidth: '44%',
+            width: '44%',
+            minHeight:'13%'
+        },
+        maxWidth:{
+            width: '44%',
+            // maxWidth: '44%',
+            // minHeight:'18%'
+        },
+        textWrap:{
+            fontSize: 15,
+            textAlign: 'center',
+            flexWrap: 'wrap',
+            marginTop:10
+        }
+        
 
     }
 )
