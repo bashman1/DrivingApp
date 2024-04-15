@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { color } from 'react-native-reanimated';
+import { FullWindowOverlay } from 'react-native-screens';
 // import { Dimensions } from 'react-native'
 // import {useWindowDimensions} from 'react-native';
 
@@ -32,7 +33,10 @@ export const styles = StyleSheet.create(
             justifyContent: 'center',
             alignItems: 'center',
         },
-
+        itemCenterIntro: {
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+        },
         marginBottom: {
             marginBottom: 20,
 
@@ -474,8 +478,11 @@ export const styles = StyleSheet.create(
             textAlign: 'center',
             flexWrap: 'wrap',
             marginTop:10
-        }
-        
+        },
+        fullScreenSliderImg: {
+            height: 240,
+            width: 240,
+        },
 
     }
 )
