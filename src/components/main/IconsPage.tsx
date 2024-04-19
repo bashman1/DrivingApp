@@ -37,7 +37,6 @@ const IconsPage = (props: any) => {
         
     ])
 
-<<<<<<< HEAD
     const goToDetails=(element)=>{
         // IconDetailsPage
         props.navigation.navigate("IconDetailsPage", { id: element.id })
@@ -45,10 +44,6 @@ const IconsPage = (props: any) => {
 
     const filterItems = (items, id) => {
         let index = items.findIndex(element => element.itemListId == id);
-=======
-    const filterItems = (items:any, id:any) => {
-        let index = items.findIndex((element: { itemListId: any; }) => element.itemListId == id);
->>>>>>> b1da97a3ffcc7eecaaa6fc090d91ba55c9d845c1
         setSelectedItems(items[index].data);
     }
 
