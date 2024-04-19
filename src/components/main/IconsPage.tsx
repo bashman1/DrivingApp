@@ -10,8 +10,10 @@ const screenWidth = Dimensions.get("window").width;
 const IconsPage = (props: any) => {
 
     const [selectedItems, setSelectedItems] = useState([])
+
     const [items, setItems] = useState([
-        { id: 1, itemListId:1, type: 'community', icon: "car-key", name: "Road Signs", data:[
+        { id: 1, itemListId:1, type: 'community', icon: "car-key", name: "Road Signs", 
+        data:[
             { id: 1, img: require("../../assets/mandatory_signs/compulsarycycletrack.png"), name: "Compulsory cycle track" },
             { id: 2, img: require("../../assets/mandatory_signs/compulsarypedestrianfootpath.png"), name: "Compulsory pedestrian footpath" },
             { id: 3, img: require("../../assets/mandatory_signs/compulsoryminimumspeed.png"), name: "Compulsory minimum speed" },
@@ -35,8 +37,8 @@ const IconsPage = (props: any) => {
         
     ])
 
-    const filterItems = (items, id) => {
-        let index = items.findIndex(element => element.itemListId == id);
+    const filterItems = (items:any, id:any) => {
+        let index = items.findIndex((element: { itemListId: any; }) => element.itemListId == id);
         setSelectedItems(items[index].data);
     }
 
@@ -50,7 +52,7 @@ const IconsPage = (props: any) => {
                 <View style={styles.marginBottom}>
                     <View style={styles.gridContainer}>
                         {
-                            selectedItems.map((element, i) => {
+                            selectedItems.map((element:any, i) => {
                                 return (
                                     <View style={[styles.item, styles.padding]}>
                                         <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => { props.navigation.navigate("IconsPage", { id: element.id }) }}>
