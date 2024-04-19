@@ -313,6 +313,9 @@ export const styles = StyleSheet.create(
         fontSize10: {
             fontSize: 10
         },
+        fontSize12: {
+            fontSize: 12
+        },
         fontSize15: {
             fontSize: 15
         },

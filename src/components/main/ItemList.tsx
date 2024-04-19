@@ -33,8 +33,6 @@ const ItemList = (props: any) => {
 
     const filterItems = (items, id) => {
         let index = items.findIndex(element => element.itemId == id)
-        console.log("**********************************" + id)
-        console.log(items[index].data);
         setSelectedItems(items[index].data);
     }
 

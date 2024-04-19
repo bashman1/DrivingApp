@@ -6,7 +6,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import SignIn from '../components/auth/SignIn'
 import Home from '../components/main/Home';
-import ItemList from '../components/main/ItemList'
+import IconDetailsPage from '../components/main/IconDetails';
+import QuizList from '../components/main/QuizList';
+import Questions from '../components/main/Questions'
+import ItemList from '../components/main/ItemList';
 import Intro from '../components/intro/Intro';
 import IconsPage from '../components/main/IconsPage'
 import { styles } from '../styles/Styles';
@@ -69,6 +72,9 @@ export const AuthScreen = () => {
                 <Drawer.Screen name="Home" component={Home} options={({ navigation })=>navLayout("Home", navigation)} />
                 <Drawer.Screen name="ItemList" component={ItemList} options={({ navigation })=>navLayout("ItemList", navigation)} />
                 <Stack.Screen name="IconsPage" component={IconsPage} options={({ navigation })=>navLayout("IconsPage", navigation)}/>
+                <Stack.Screen name="IconDetailsPage" component={IconDetailsPage} options={({ navigation })=>navLayout("IconDetailsPage", navigation)}/>
+                <Stack.Screen name="QuizList" component={QuizList} options={({ navigation })=>navLayout("QuizList", navigation)}/>
+                <Stack.Screen name="Questions" component={Questions} options={({ navigation })=>navLayout("Questions", navigation)}/>
                 {/* <Stack.Screen name="ConsultMedicalWorker" component={Consultation}/> */}
             </Stack.Navigator>
         </NavigationContainer>

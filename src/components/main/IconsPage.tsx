@@ -35,6 +35,11 @@ const IconsPage = (props: any) => {
         
     ])
 
+    const goToDetails=(element)=>{
+        // IconDetailsPage
+        props.navigation.navigate("IconDetailsPage", { id: element.id })
+    }
+
     const filterItems = (items, id) => {
         let index = items.findIndex(element => element.itemListId == id);
         setSelectedItems(items[index].data);
@@ -53,7 +58,7 @@ const IconsPage = (props: any) => {
                             selectedItems.map((element, i) => {
                                 return (
                                     <View style={[styles.item, styles.padding]}>
-                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => { props.navigation.navigate("IconsPage", { id: element.id }) }}>
+                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => {goToDetails(element)}}>
                                             <Image style={styles.homeScreenIcon} key={i} source={element.img} />
                                             <Text style={[styles.healthPalBlue, styles.textWrap, styles.fontWeightBold]}>{element.name}</Text>
                                         </TouchableOpacity>
