@@ -31,7 +31,7 @@ const ItemList = (props: any) => {
     ]);
     const [selectedItems, setSelectedItems] = useState([])
 
-    const filterItems = (items, id) => {
+    const filterItems = (items: any[], id: string) => {
         let index = items.findIndex(element => element.itemId == id)
         setSelectedItems(items[index].data);
     }
@@ -45,7 +45,7 @@ const ItemList = (props: any) => {
             <View style={styles.padding}>
                 <View>
                     {
-                        selectedItems.map((element) => {
+                        selectedItems.map((element:any) => {
                             return (
                                 <TouchableOpacity style={[styles.card, styles.marginBottom]} onPress={()=>{ props.navigation.navigate("IconsPage", { id: element.id })}}>
                                     {/* <Text>{element.name}</Text> */}
