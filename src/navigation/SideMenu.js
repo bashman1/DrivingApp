@@ -6,10 +6,6 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import { styles } from '../styles/Styles';
 import { useDispatch, useSelector } from 'react-redux';
-// import { validatePhone, mailValidation, showToast, createAlert, showLoading } from '../services/CommonService';
-// import {logout} from '../service/CommonService';
-// import AsyncStorage from '@react-native-async-storage/async-storage';
-// import {logOut} from '../service/RemoteService';
 import { AuthContext } from '../services/Context';
 import { LoggedInUser, GenericQueryAll, GenericDeleteAll } from '../databases/allSchemas'
 
