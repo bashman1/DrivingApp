@@ -25,9 +25,6 @@ const Card = ({item}:any) => {
     return (
         <ScrollView style={{backgroundColor:'white'}}>
             <View style={styles.padding}>
-                <View style={styles.marginBottom}>
-                    <Text>Intro</Text>
-                </View>
                 <ScrollView  horizontal={true}>
                     { items.map(item => <Card key={item.id} item={item}/>)}
                 
