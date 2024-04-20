@@ -23,7 +23,7 @@ const Card = ({item}:any) => {
   };
 
     return (
-        <ScrollView>
+        <ScrollView style={{backgroundColor:'white'}}>
             <View style={styles.padding}>
                 <View style={styles.marginBottom}>
                     <Text>Intro</Text>
@@ -33,8 +33,8 @@ const Card = ({item}:any) => {
                 
                 </ScrollView>
                 <View style={styles.marginBottom}>
-                    <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('SignIn') }}>
-                        <Text style={styles.healthPalWhite}>Next</Text>
+                    <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('GetStarted') }}>
+                        <Text style={styles.healthPalWhite}>Get Started</Text>
                     </TouchableOpacity>
                 </View>
             </View>

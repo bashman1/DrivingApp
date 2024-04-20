@@ -8,6 +8,8 @@ import SignIn from '../components/auth/SignIn'
 import Home from '../components/main/Home';
 import ItemList from '../components/main/ItemList'
 import Intro from '../components/intro/Intro';
+import GetStarted from '../components/intro/GetStarted';
+
 import IconsPage from '../components/main/IconsPage'
 import { styles } from '../styles/Styles';
 import IonIcon from 'react-native-vector-icons/Ionicons';
@@ -66,6 +68,7 @@ export const AuthScreen = () => {
             <Stack.Navigator screenOptions={{ headerShown: false, navigationBarColor: '#fff' }}>
                 <Stack.Screen name="Intro" component={Intro} />
                 <Stack.Screen name="SignIn" component={SignIn} />
+                <Stack.Screen name="GetStarted" component={GetStarted} />
                 <Drawer.Screen name="Home" component={Home} options={({ navigation })=>navLayout("Home", navigation)} />
                 <Drawer.Screen name="ItemList" component={ItemList} options={({ navigation })=>navLayout("ItemList", navigation)} />
                 <Stack.Screen name="IconsPage" component={IconsPage} options={({ navigation })=>navLayout("IconsPage", navigation)}/>
