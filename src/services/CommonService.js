@@ -128,3 +128,7 @@ export const logout = (props) => {
 export const appColor=()=>{
     return '#800000';
 }
+
+export const filter=(array, filter)=>{
+    return array.filter(element => element.indicator == filter);
+}

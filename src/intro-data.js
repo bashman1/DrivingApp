@@ -86,6 +86,16 @@ export const getStarted = [
     }
 ]
 
+
+export const menu=[
+    { id: 1, navigateTo:"details", indicator:'HOME_MENU', type: 'community', icon: "car-key", name: "Road Signs" },
+    { id: 2, navigateTo:"details", indicator:'HOME_MENU', type: 'community', icon: "book", name: "Basic Theory" },
+    { id: 3, navigateTo:"icons", indicator:'HOME_MENU', type: 'community', icon: "white-balance-sunny", name: "Road Markings" },
+    { id: 4, navigateTo:"icons", indicator:'HOME_MENU', type: 'community', icon: "traffic-light", name: "Traffic Signals" },
+    { id: 5, navigateTo:"quiz", indicator:'HOME_MENU', type: 'community', icon: "gavel", name: "Exercises" },
+    { id: 6, navigateTo:"settings", indicator:'HOME_MENU', type: 'ionic', icon: "settings-sharp", name: "Settings" },
+]
+
 export const  iconImg=[
     { id: 1, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/compulsarycycletrack.png"), name: "Compulsory cycle track" },
     { id: 2, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/compulsarypedestrianfootpath.png"), name: "Compulsory pedestrian footpath" },
@@ -139,4 +149,4 @@ export const  iconImg=[
     { id: 50, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/turnleftahead.png"), name: "Turn left ahead" },
     { id: 51, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/turnrightahead.png"), name: "Turn right ahead" },
     { id: 52, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/vehiclestravelstrightorturnright.png"), name: "Vehicle travel straight or turn" },
-]
+];
