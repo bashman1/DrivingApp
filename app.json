@@ -1,4 +1,5 @@
 {
   "name": "DrivingSchool",
-  "displayName": "DrivingSchool"
+  "displayName": "DrivingSchool",
+  "orientation":"default"
 }

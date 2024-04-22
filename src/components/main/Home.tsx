@@ -20,7 +20,7 @@ const Home = (props: any) => {
     ])
 
 
-    const goToDetailsPage=(element, direction)=>{
+    const goToDetailsPage=(element: { id: any; indicator?: string; type?: string; icon?: string; name?: string; }, direction: string)=>{
         if(direction=='details'){
             props.navigation.navigate("ItemList", { id: element.id })
         }else if(direction == 'icons'){
