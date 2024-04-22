@@ -5,22 +5,15 @@ import { Dimensions } from "react-native";
 import {appColor} from '../../services/CommonService'
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {filter} from '../../services/CommonService';
+import {menu} from '../../intro-data';
 
 const screenWidth = Dimensions.get("window").width;
 const Home = (props: any) => {
 
-    const [items, setItems] = useState([
-        { id: 1, indicator:'details', type: 'community', icon: "car-key", name: "Road Signs" },
-        { id: 2, indicator:'details', type: 'community', icon: "book", name: "Basic Theory" },
-        { id: 3, indicator:'icons', type: 'community', icon: "white-balance-sunny", name: "Road Markings" },
-        { id: 4, indicator:'icons', type: 'community', icon: "traffic-light", name: "Traffic Signals" },
-        { id: 5, indicator:'quiz', type: 'community', icon: "gavel", name: "Exercises" },
-        { id: 6, indicator:'settings', type: 'ionic', icon: "settings-sharp", name: "Settings" },
-        
-    ])
+    const [items, setItems] = useState([])
 
-
-    const goToDetailsPage=(element, direction)=>{
+    const goToDetailsPage=(element: { id: any; indicator?: string; type?: string; icon?: string; name?: string; }, direction: string)=>{
         if(direction=='details'){
             props.navigation.navigate("ItemList", { id: element.id })
         }else if(direction == 'icons'){
@@ -33,6 +26,7 @@ const Home = (props: any) => {
     }
 
     useEffect(() => {
+        setItems(filter(menu, 'HOME_MENU'));
     });
 
     return (
@@ -44,7 +38,7 @@ const Home = (props: any) => {
                             items.map((element) => {
                                 return (
                                     <View style={[styles.item, styles.padding]}>
-                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => { goToDetailsPage(element, element.indicator) }}>
+                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => { goToDetailsPage(element, element.navigateTo) }}>
                                             {element.type == 'ionic' ? (
                                                 <IonIcon name={element.icon} color={appColor()} size={60} />
                                             ) : (

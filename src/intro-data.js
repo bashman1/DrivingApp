@@ -2,7 +2,7 @@
 const introData = [
     {
         id:1,
-        title:"Road Signs & Symboles",
+        title:"Road Signs & Symbols",
         description:"They help ensure all road users are safe from potential driving hazards",
         img:require("./assets/introduction_signs/road_signs.jpg")   ,
     },
@@ -22,6 +22,79 @@ const introData = [
 
 export default introData;
 
+export const getStarted = [
+    {
+        id:1,
+        title:"Road Signs & Symbols",
+        description:"Learn more about",
+        details:[
+            {
+                id:1,
+                detailsTitle:"a) Warning Signs",
+                iconsDescription:[
+                    {
+                        img:require("./assets/introduction_signs/road_signs/bendleft.png"),
+                        text:"Bend Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/roadnarrowsfromleft.png"),
+                        text:"Road Narrows from Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/slipperyroad.png"),
+                        text:"Slippery Roads"
+                    }
+                ]
+            },
+            {
+                id:2,
+                detailsTitle:"b) Manadatory Road Signs",
+                iconsDescription:[
+                    {
+                        img:require("./assets/introduction_signs/road_signs/noturnright.png"),
+                        text:"Bend Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/noentryforpedestrians.png"),
+                        text:"Road Narrows from Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/roadclosed.png"),
+                        text:"Slippery Roads"
+                    }
+                ]
+            },
+            {
+                id:3,
+                detailsTitle:"c) Information Road Signs",
+                iconsDescription:[
+                    {
+                        img:require("./assets/introduction_signs/road_signs/hospital.png"),
+                        text:"Bend Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/hotel.png"),
+                        text:"Road Narrows from Left"
+                    },
+                    {
+                        img:require("./assets/introduction_signs/road_signs/fillingstation.png"),
+                        text:"Slippery Roads"
+                    }
+                ]
+            }
+        ],
+    }
+]
+
+
+export const menu=[
+    { id: 1, navigateTo:"details", indicator:'HOME_MENU', type: 'community', icon: "car-key", name: "Road Signs" },
+    { id: 2, navigateTo:"details", indicator:'HOME_MENU', type: 'community', icon: "book", name: "Basic Theory" },
+    { id: 3, navigateTo:"icons", indicator:'HOME_MENU', type: 'community', icon: "white-balance-sunny", name: "Road Markings" },
+    { id: 4, navigateTo:"icons", indicator:'HOME_MENU', type: 'community', icon: "traffic-light", name: "Traffic Signals" },
+    { id: 5, navigateTo:"quiz", indicator:'HOME_MENU', type: 'community', icon: "gavel", name: "Exercises" },
+    { id: 6, navigateTo:"settings", indicator:'HOME_MENU', type: 'ionic', icon: "settings-sharp", name: "Settings" },
+]
 
 export const  iconImg=[
     { id: 1, indicator:'MANDATORY_SIGNS', img: require("./assets/mandatory_signs/compulsarycycletrack.png"), name: "Compulsory cycle track" },
@@ -76,4 +149,58 @@ export const  iconImg=[
     { id: 50, indicator:'MANDATORY_SIGNS', img: require("./assets/mandatory_signs/turnleftahead.png"), name: "Turn left ahead" },
     { id: 51, indicator:'MANDATORY_SIGNS', img: require("./assets/mandatory_signs/turnrightahead.png"), name: "Turn right ahead" },
     { id: 52, indicator:'MANDATORY_SIGNS', img: require("./assets/mandatory_signs/vehiclestravelstrightorturnright.png"), name: "Vehicle travel straight or turn" },
+    { id: 53, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/beginningofdualcarriageroad.png"), name: "Road widens ahead" },
+    { id: 54, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/bendleft.png"), name: "Bend left" },
+    { id: 55, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/bendright.png"), name: "Bend right" },
+    { id: 56, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/carriagewaynarrowsbothsides.png"), name: "Carriage way narrows both" },
+    { id: 57, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/cattlecrossingahead.png"), name: "Cattle crossing ahead" },
+    { id: 58, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/childrencrossing.png"), name: "Children crossing" },
+    { id: 59, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/crossingwind.png"), name: "Crossing wind" },
+    { id: 60, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/cyclist.png"), name: "Cyclist" },
+    { id: 61, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/dangeroffallingrocksahead.png"), name: "Danger of falling rocks" },
+    { id: 62, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/electriccablesahead.png"), name: "Electric cable" },
+    { id: 63, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/endofdualcarriageroad.png"), name: "End of dual carriage road" },
+    { id: 64, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/ferryahead.png"), name: "Ferry ahead" },
+    { id: 65, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/give_way.png"), name: "Give way" },
+    { id: 66, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/hazardahead.png"), name: "Hazard ahead" },
+    { id: 67, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/humbbridgeahead.png"), name: "Hump bridge ahead" },
+    { id: 68, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/junctionahead.png"), name: "Junction ahead stop" },
+    { id: 69, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/junctionaheadofaccelerationlanewithroadfromtherigh.png"), name: "Junction ahead of acceleration" },
+    { id: 70, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/loosesurfaceroads.png"), name: "Loose surface road" },
+    { id: 71, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/lowflyingaircraftcrossingahead.png"), name: "Lower flying aircraft" },
+    // { id: 72, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/men_at_work.png"), name: "Road work ahead" },
+    { id: 73, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/minorroadfromleft.png"), name: "Minor road road left" },
+    { id: 74, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/minorroadfromright.png"), name: "Minor road right" },
+    { id: 75, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/narrowbridgeahead.png"), name: "Narrow bridge ahead" },
+    { id: 76, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/pedestrianscrossing.png"), name: "Pedestrians crossing" },
+    { id: 77, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/railwaycrossingwithbarriers.png"), name: "Railway crossing with barrier" },
+    { id: 78, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/railwaycrossingwithoutbarriers.png"), name: "Railway crossing without barrier" },
+    { id: 79, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/riverbank.png"), name: "River bank" },
+    { id: 80, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/riverbendcrossingahead.png"), name: "River bend crossing" },
+    { id: 81, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roadjunctionahead.png"), name: "Road junction ahead" },
+    { id: 82, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roadnarrowsfromleft.png"), name: "Narrow road left" },
+    { id: 83, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roadnarrowsfromright.png"), name: "Narrow road right" },
+    { id: 84, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roadwidensahead.png"), name: "Road widens ahead" },
+    { id: 85, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roadworksahead.png"), name: "Road works ahead" },
+    { id: 86, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/roundaboutahead.png"), name: "Round about" },
+    { id: 87, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/severebumpahead.png"), name: "Severe hump ahead" },
+    { id: 88, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/severedipahead.png"), name: "Severe dipa ahead" },
+    { id: 89, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/slipperyroad.png"), name: "Slippery road" },
+    { id: 90, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/steepascentahead.png"), name: "Steep ascent head" },
+    { id: 91, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/steepdecentahead.png"), name: "Steep descent head" },
+    { id: 92, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/stop.png"), name: "Stop" },
+    { id: 93, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/successivebendtotheleft.png"), name: "Successive bend left" },
+    { id: 94, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/successivebendtotheright.png"), name: "Successive bend right" },
+    { id: 95, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/t-junctionahead.png"), name: "T-junction ahead" },
+    { id: 96, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/trafficjam.png"), name: "Traffic jam" },
+    { id: 97, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/trafficlightsignalahead.png"), name: "Traffic lights ahead" },
+    { id: 98, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/twowaytrafficahead.png"), name: "Two way trafic head" },
+    { id: 99, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/unevenroadsurfaceahead.png"), name: "Uneven road surface ahead" },
+    { id: 100, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/wildaninalscrossing.png"), name: "Game park ahead" },
+    { id: 101, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/yintersectionahead.png"), name: "Y-intersection ahead" },
 ];
+
+
+
+
+
