@@ -50,7 +50,7 @@ const Card = () => {
                 <Card/>
                 </ScrollView>
                 <View style={styles.marginBottom}>
-                        <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('SignIn') }}>
+                        <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('LearnMore') }}>
                         <Text style={styles.healthPalWhite}>Next</Text>
                     </TouchableOpacity>
                 </View>

@@ -16,6 +16,7 @@ import GetStarted from '../components/intro/GetStarted';
 import IconsPage from '../components/main/IconsPage'
 import { styles } from '../styles/Styles';
 import IonIcon from 'react-native-vector-icons/Ionicons';
+import LearnMore from '../components/intro/LearnMore';
 
 
 
@@ -72,6 +73,7 @@ export const AuthScreen = () => {
                 <Stack.Screen initialRouteName='Intro' name="Intro" component={Intro} />
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Stack.Screen name="GetStarted" component={GetStarted} />
+                <Stack.Screen name="LearnMore" component={LearnMore} />
                 <Drawer.Screen name="Home" component={Home} options={({ navigation })=>navLayout("Home", navigation)} />
                 <Drawer.Screen name="ItemList" component={ItemList} options={({ navigation })=>navLayout("ItemList", navigation)} />
                 <Stack.Screen name="IconsPage" component={IconsPage} options={({ navigation })=>navLayout("IconsPage", navigation)}/>
