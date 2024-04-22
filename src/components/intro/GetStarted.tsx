@@ -3,7 +3,6 @@ import { View, Image, TouchableOpacity, Text, ScrollView, Appearance } from 'rea
 import { styles } from '../../styles/Styles';
 import introData from '../../intro-data';
 import { getStarted } from '../../intro-data';
-
 const GetStarted = (props: any) => {
     const [selectedItems, setSelectedItems] = useState([])
 

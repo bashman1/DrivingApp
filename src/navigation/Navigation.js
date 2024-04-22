@@ -69,7 +69,7 @@ export const AuthScreen = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false, navigationBarColor: '#fff' }}>
-                <Stack.Screen name="Intro" component={Intro} />
+                <Stack.Screen initialRouteName='Intro' name="Intro" component={Intro} />
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Stack.Screen name="GetStarted" component={GetStarted} />
                 <Drawer.Screen name="Home" component={Home} options={({ navigation })=>navLayout("Home", navigation)} />

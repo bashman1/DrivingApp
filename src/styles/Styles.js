@@ -486,6 +486,9 @@ export const styles = StyleSheet.create(
             height: 240,
             width: 240,
         },
+        introImg:{
+            height:"100%"
+        }
 
     }
 )

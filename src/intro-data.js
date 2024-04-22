@@ -139,4 +139,4 @@ export const  iconImg=[
     { id: 50, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/turnleftahead.png"), name: "Turn left ahead" },
     { id: 51, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/turnrightahead.png"), name: "Turn right ahead" },
     { id: 52, indicator:'MANDATORY_SIGNS', img: require("../../assets/mandatory_signs/vehiclestravelstrightorturnright.png"), name: "Vehicle travel straight or turn" },
-];
+]
