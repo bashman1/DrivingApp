@@ -17,7 +17,7 @@ const Card = ({item}:any) => {
       <View style={{flex:1, width:400,marginHorizontal:20}}>
         <Text style={[styles.title,{flex:1, textAlign:'center'}]}>{item.title}</Text>
         <Text style={{textAlign:'center',paddingHorizontal:50, paddingBottom:20,fontSize:16}}>{item.description}</Text>
-        <Image style={{flex:1,resizeMode: 'cover',width: 400,height:400,marginBottom:30}}  source={item.img} />
+        <Image style={{flex:1,resizeMode: 'contain',width: 400,height:470,marginBottom:30}}  source={item.img} />
       </View>
     );
   };
