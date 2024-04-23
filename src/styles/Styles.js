@@ -70,6 +70,20 @@ export const styles = StyleSheet.create(
             borderRadius: 5,
             backgroundColor: '#5F9B42'
         },
+        touchableButtonCtm: {
+            borderWidth: 1,
+            borderColor: '#5F9B42',
+            width: '100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: 15,
+            borderRadius: 10,
+            backgroundColor: '#5F9B42'
+        },
+        touchbCtmPymnt: {
+            backgroundColor: '#00cc33'
+        },
+
         touchableClearButton: {
             // borderWidth: 1,
             // borderColor: '#253674',
@@ -486,6 +500,9 @@ export const styles = StyleSheet.create(
             height: 240,
             width: 240,
         },
+        introImg:{
+            height:"100%"
+        }
 
     }
 )

@@ -3,7 +3,6 @@ import { View, Image, TouchableOpacity, Text, ScrollView, Appearance } from 'rea
 import { styles } from '../../styles/Styles';
 import introData from '../../intro-data';
 import { getStarted } from '../../intro-data';
-
 const GetStarted = (props: any) => {
     const [selectedItems, setSelectedItems] = useState([])
 
@@ -51,7 +50,7 @@ const Card = () => {
                 <Card/>
                 </ScrollView>
                 <View style={styles.marginBottom}>
-                        <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('SignIn') }}>
+                        <TouchableOpacity style={styles.touchableButton} onPress={() => { props.navigation.navigate('LearnMore') }}>
                         <Text style={styles.healthPalWhite}>Next</Text>
                     </TouchableOpacity>
                 </View>
