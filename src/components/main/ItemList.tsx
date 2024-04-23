@@ -5,40 +5,50 @@ import { Dimensions } from "react-native";
 import IonIcon from 'react-native-vector-icons/Ionicons';
 // import IonIcon from 'react-native-vector-icons/Ionicons';
 
+import {filter} from '../../services/CommonService';
+import {menu} from '../../intro-data';
+
 const screenWidth = Dimensions.get("window").width;
 const ItemList = (props: any) => {
 
     const [items, setItems] = useState([
-        {
-            id: 1, icon: "", itemId: 1, data: [
-                { id: 1, icon: "", name: "Mandatory Signs" },
-                { id: 2, icon: "", name: "Warning Signs" },
-                { id: 2, icon: "", name: "Information Signs" },
-                { id: 2, icon: "", name: "Roadworks Signs" },
-                { id: 2, icon: "", name: "Transerve Markings" },
-                { id: 2, icon: "", name: "Other Road Markings" },
-            ]
-        },
-        {
-            id: 2, icon: "", itemId: 2, data: [
-                { id: 1, icon: "", name: "Introduction to driving" },
-                { id: 2, icon: "", name: "Basic Mechanics" },
-                { id: 2, icon: "", name: "Defensive Driving" },
-                { id: 2, icon: "", name: "Roadworks Signs" },
-                { id: 2, icon: "", name: "Basic first aid" },
-            ]
-        }
+        // {
+        //     id: 1, icon: "", itemId: 1, data: [
+        //         { id: 1, icon: "", name: "Mandatory Signs" },
+        //         { id: 2, icon: "", name: "Warning Signs" },
+        //         { id: 2, icon: "", name: "Information Signs" },
+        //         { id: 2, icon: "", name: "Roadworks Signs" },
+        //         { id: 2, icon: "", name: "Transerve Markings" },
+        //         { id: 2, icon: "", name: "Other Road Markings" },
+        //     ]
+        // },
+        // {
+        //     id: 2, icon: "", itemId: 2, data: [
+        //         { id: 1, icon: "", name: "Introduction to driving" },
+        //         { id: 2, icon: "", name: "Basic Mechanics" },
+        //         { id: 2, icon: "", name: "Defensive Driving" },
+        //         { id: 2, icon: "", name: "Roadworks Signs" },
+        //         { id: 2, icon: "", name: "Basic first aid" },
+        //     ]
+        // }
     ]);
     const [selectedItems, setSelectedItems] = useState([])
 
-    const filterItems = (items: any[], id: string) => {
-        let index = items.findIndex(element => element.itemId == id)
-        setSelectedItems(items[index].data);
+    const filterItems = () => {
+        setSelectedItems(filter(menu, props.route.params.ind));
+    }
+
+    const navigateToNext=(element)=>{
+        if(element.component == 'ItemList'){
+            props.navigation.push(element.component, { ind:element.param });
+        }else{
+            props.navigation.navigate(element.component, { id: element.id, ind:element.param })
+        }
     }
 
     useEffect(() => {
-        filterItems(items, props.route.params.id)
-    });
+        filterItems()
+    }, []);
 
     return (
         <ScrollView>
@@ -47,13 +57,10 @@ const ItemList = (props: any) => {
                     {
                         selectedItems.map((element:any) => {
                             return (
-                                <TouchableOpacity style={[styles.card, styles.marginBottom]} onPress={()=>{ props.navigation.navigate("IconsPage", { id: element.id })}}>
-                                    {/* <Text>{element.name}</Text> */}
+                                <TouchableOpacity style={[styles.card, styles.marginBottom]} onPress={()=>{ navigateToNext(element)}}>
                                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                                         <Text style={[styles.fontWeightBold, styles.fontSize20]}>{element.name}</Text>
-
                                         <IonIcon name="arrow-forward" color={'000'} size={25}/>
-                                        {/* <Icon name='calendar' /> */}
                                     </View>
                                 </TouchableOpacity>
                             )

@@ -15,19 +15,24 @@ const Home = (props: any) => {
 
     const goToDetailsPage=(element: { id: any; indicator?: string; type?: string; icon?: string; name?: string; }, direction: string)=>{
         if(direction=='details'){
-            props.navigation.navigate("ItemList", { id: element.id })
+            props.navigation.navigate("ItemList", { id: element.id, ind:element.param })
         }else if(direction == 'icons'){
-            props.navigation.navigate("IconsPage", { id: element.id })
+            props.navigation.navigate("IconsPage", { id: element.id, ind:element.param })
         }else if(direction == 'quiz'){
-            props.navigation.navigate("QuizList", { id: element.id })
+            props.navigation.navigate("QuizList", { id: element.id, ind:element.param })
         }else if(direction == 'settings'){
-            props.navigation.navigate("ItemList", { id: element.id })
+            props.navigation.navigate("ItemList", { id: element.id, ind:element.param })
         }
     }
 
-    useEffect(() => {
+
+    const getHomeMenu=()=>{
         setItems(filter(menu, 'HOME_MENU'));
-    });
+    }
+
+    useEffect(() => {
+        getHomeMenu();
+    }, []);
 
     return (
         <ScrollView>
