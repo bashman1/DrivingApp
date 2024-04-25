@@ -62,7 +62,7 @@ const LernMore = (props: any) => {
                                 <View style={{flex:1,alignItems:'center', padding:30, width:"100%", rowGap:30}}>
                                     <Text style={{fontSize:20}}>A one time Fee of 3,500/=</Text>
                                     
-                                    <TouchableOpacity style={[styles.touchableButtonCtm,styles.touchbCtmPymnt]} onPress={() => handleSnapPress(1)}>
+                                    <TouchableOpacity style={[styles.touchableButtonCtm,styles.touchbCtmPymnt]} onPress={() => {handleSnapPress(1); props.navigation.navigate('Home')}}>
                                         <Text  style={styles.healthPalWhite}>Pay with Mobile Money</Text>
                                     </TouchableOpacity>
 
