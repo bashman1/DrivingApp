@@ -6,11 +6,11 @@ import IonIcon from 'react-native-vector-icons/Ionicons';
 // import IonIcon from 'react-native-vector-icons/Ionicons';
 
 import {filter} from '../../services/CommonService';
-import {menu} from '../../intro-data';
+import {menu, iconImg} from '../../intro-data';
 
 const screenWidth = Dimensions.get("window").width;
 const ItemList = (props: any) => {
-
+ 
     const [items, setItems] = useState([
         // {
         //     id: 1, icon: "", itemId: 1, data: [
