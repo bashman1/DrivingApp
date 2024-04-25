@@ -5,6 +5,8 @@ import { Dimensions } from "react-native";
 import {appColor} from '../../services/CommonService'
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {filter} from '../../services/CommonService';
+import {menu, iconImg} from '../../intro-data';
 
 const screenWidth = Dimensions.get("window").width;
 const IconsPage = (props: any) => {
@@ -42,14 +44,15 @@ const IconsPage = (props: any) => {
         props.navigation.navigate("IconDetailsPage", { id: element.id })
     }
 
-    const filterItems = (items, id) => {
-        let index = items.findIndex(element => element.itemListId == id);
-        setSelectedItems(items[index].data);
+    const filterItems = () => {
+        setSelectedItems(filter(iconImg, props.route.params.ind));
+        // let index = items.findIndex(element => element.itemListId == id);
+        // setSelectedItems(items[index].data);
     }
 
     useEffect(() => {
-        filterItems(items, 1)
-    });
+        filterItems();
+    }, []);
 
     return (
         <ScrollView>
@@ -60,7 +63,7 @@ const IconsPage = (props: any) => {
                             selectedItems.map((element:any, i) => {
                                 return (
                                     <View style={[styles.item, styles.padding]}>
-                                        <TouchableOpacity style={[styles.card, styles.minWidth, styles.itemCenter]} onPress={() => {goToDetails(element)}}>
+                                        <TouchableOpacity style={[styles.card, styles.itemCenter]} onPress={() => {goToDetails(element)}}>
                                             <Image style={styles.homeScreenIcon} key={i} source={element.img} />
                                             <Text style={[styles.healthPalBlue, styles.textWrap, styles.fontWeightBold]}>{element.name}</Text>
                                         </TouchableOpacity>
