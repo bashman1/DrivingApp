@@ -10,6 +10,7 @@
     "debug": "cd android && ./gradlew assembleDebug",
     "apk": "cd android && ./gradlew assembleRelease",
     "clean": "cd android && ./gradlew clean",
+    "installDebug":"adb -s 8QCNW21A09000005 install -r /Users/vantage/Desktop/Projects/GodForUs__All/DrivingApp/android/app/build/outputs/apk/debug/app-debug.apk",
     "aab": "cd android && ./gradlew bundleRelease",
     "stop": "cd android && gradlew --stop",
     "cleanCache": "cd android && ./gradlew cleanBuildCache",

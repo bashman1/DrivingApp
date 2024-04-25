@@ -25,9 +25,9 @@ const LernMore = (props: any) => {
         sheetRef.current?.snapToIndex(index);
       }, []);
 
-      const handleClosePress = useCallback(() => {
-        sheetRef.current?.close();
-      }, []);
+    //   const handleClosePress = useCallback(() => {
+    //     sheetRef.current?.close();
+    //   }, []);
 
       // renders
 	const renderBackdrop = useCallback(
