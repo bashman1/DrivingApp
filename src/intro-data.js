@@ -114,7 +114,7 @@ export const menu=[
     { id: 12, component:"ItemList", param:"ROADWORK_SIGNS", navigateTo:"", indicator:'BASIC_THEORY', type: 'ionic', icon: "", name: "Roadworks Signs" },
     { id: 12, component:"ItemList", param:"BASIC_FIRST_AID", navigateTo:"", indicator:'BASIC_THEORY', type: 'ionic', icon: "", name: "Basic first aid" },
 
-    
+    { id: 12, component:"ItemList", param:"BASIC_FIRST_AID", navigateTo:"", indicator:'INTRODUCTION_TO_DRIVING', type: 'ionic', icon: "", name: "Basic first aid" },
 ]
 
 export const  iconImg=[
@@ -219,4 +219,39 @@ export const  iconImg=[
     { id: 99, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/unevenroadsurfaceahead.png"), name: "Uneven road surface ahead" },
     { id: 100, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/wildaninalscrossing.png"), name: "Game park ahead" },
     { id: 101, indicator:'WARNING_SIGNS', img: require("./assets/warning_signs/yintersectionahead.png"), name: "Y-intersection ahead" },
+
+    { id: 102, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/alternateright_bike.png"), name: "ht" },
+    { id: 103, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/ambulance.png"), name: "ht" },
+    { id: 104, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/arrowdirection.png"), name: "ht" },
+    { id: 105, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/breakdownservice.png"), name: "ht" },
+    { id: 106, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/firebrigade.png"), name: "ht" },
+    { id: 107, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/frontandbehindstop.png"), name: "ht" },
+    { id: 108, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/green.png"), name: "ht" },
+    { id: 109, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/greenyescross.png"), name: "ht" },
+    { id: 110, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/leftindicator.png"), name: "ht" },
+    { id: 111, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/motorbikeslowdown.png"), name: "ht" },
+    { id: 112, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/motorbiketurningright.png"), name: "ht" },
+    { id: 113, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/motorbiketurnleft.png"), name: "ht" },
+    { id: 114, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/orange.png"), name: "ht" },
+    { id: 115, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/policelight.png"), name: "ht" },
+    { id: 116, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/red.png"), name: "ht" },
+    { id: 117, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/redflashing.png"), name: "ht" },
+    { id: 118, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/redlights.png"), name: "ht" },
+    { id: 119, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/rednocross.png"), name: "ht" },
+    { id: 120, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/rightindicator.png"), name: "ht" },
+    { id: 121, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/sidevehiclescome.png"), name: "ht" },
+    { id: 122, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/slowdown_car.png"), name: "ht" },
+    { id: 123, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/stop_bike.png"), name: "ht" },
+    { id: 124, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/taxservice.png"), name: "ht" },
+    { id: 125, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turningleft_bike.png"), name: "ht" },
+    { id: 126, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turningleftgo.png"), name: "ht" },
+    { id: 127, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turningright_bike.png"), name: "ht" },
+    { id: 128, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turningrightgo.png"), name: "ht" },
+    { id: 129, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turnleft_car.png"), name: "ht" },
+    { id: 130, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/turnright_car.png"), name: "ht" },
+    { id: 131, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/vehiclesbehindstop.png"), name: "ht" },
+    { id: 132, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/vehiclesfrombehindcome.png"), name: "ht" },
+    { id: 133, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/vehiclesfromfrontcome.png"), name: "ht" },
+    { id: 134, indicator:'TRAFFIC_SIGNALS', img: require("./assets/traffic_signals/vehiclesfromfrontstop.png"), name: "ht" },
+
 ];
